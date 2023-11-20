@@ -30,3 +30,6 @@ gen
 
 # Go workspace file
 go.work
+
+.vscode
+.vscode-upload.json

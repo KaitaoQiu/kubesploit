@@ -782,6 +782,41 @@ var KNOWN_KUBERNETES_CVES = []CVE{
 		Description: "json-patch requests can exhaust apiserver resources",
 		CVENumber:   "CVE-2019-1002100",
 	},
+	{
+		FixedVersions: []Version{
+			{Major: 1, Minor: 9, Patch: 3, Raw: "1.9.3"},
+		},
+		Description: "container_escape vulnerability.",
+		CVENumber:   "cve-2018-1002100",
+	},
+	{
+		FixedVersions: []Version{
+			{Major: 1, Minor: 11, Patch: 1, Raw: "1.11.1"},
+		},
+		Description: "container_escape vulnerability.",
+		CVENumber:   "cve-2019-1002101",
+	},
+	{
+		FixedVersions: []Version{
+			{Major: 1, Minor: 17, Patch: 1, Raw: "1.17.1"},
+		},
+		Description: "man_in_the_middle vulnerability.",
+		CVENumber:   "cve-2020-8554",
+	},
+	{
+		FixedVersions: []Version{
+			{Major: 1, Minor: 11, Patch: 10, Raw: "1.11.10"},
+		},
+		Description: "denial_of_service vulnerability.",
+		CVENumber:   "cve-2019-9512",
+	},
+	{
+		FixedVersions: []Version{
+			{Major: 1, Minor: 11, Patch: 10, Raw: "1.11.10"},
+		},
+		Description: "denial_of_service vulnerability.",
+		CVENumber:   "cve-2019-9514",
+	},
 }
 
 func printCVE(cve CVE) {
